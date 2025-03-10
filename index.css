@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    background-image: linear-gradient(to bottom, red, black);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo {
+    color: gold;
+    font-size: 50px;
+    animation: parpadeo 2s infinite;
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+nav {
+    height: 250px;
+    width: 50%;
+    margin: auto;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    background-color: #333;
+    padding: 20px;
+}
+
+nav img {
+    width: 400px;
+    height: 250px;
+    border-radius: 10%;
+    margin-right: 20px;
+}
+
+aside {
+    color: white;
+}
+
+.portafolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.portafolio h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.boton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.boton img {
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease;
+}
+
+.boton:hover img {
+    transform: scale(1.2);
+}
+
+.boton img {
+    cursor: pointer;
+}
+
+.boton img {
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+    box-shadow: 0 0 10px white;
+}
+
+.boton img {
+    cursor: pointer;
+}
+
+/* Agregar hipervínculo al botón */
+.boton {
+    position: relative;
+}
+
+.boton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.boton::after {
+    background-image: none;
+}
+
+/* Para abrir en otra pestaña */
+.boton {
+    cursor: pointer;
+}
+
+/* Agregar evento de click para abrir URL */
+/* Esto se haría con JavaScript */
